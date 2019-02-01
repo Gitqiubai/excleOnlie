@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for each in all_work %}
+
+<p><a href="/show?id={{ each.id }}">{{ each.work_name }}</a><a>-------</a><a href="/test?id={{ each.id }}">【填写数据】</a></p>
+
+{% endfor %}
+<hr>
+<p><a href="/login">切换账号</a></p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/commit/" method="post">
+
+    <table border="1">
+    <tr>
+        {% for each in data %}
+            <th>{{ each }}</th>
+        {% endfor %}
+    </tr>
+    <tr>
+        {% for col,each in data3 %}
+            <td><input type="text" name="{{ col }}" value="{{ each }}" style="width: auto;height: 100%"></td>
+        {% endfor %}
+    </tr>
+
+    </table>
+    {% csrf_token %}
+    <button type="submit">提交保存</button>
+
+    </form>
+
+</body>
+</html>

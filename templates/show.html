@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<HR>
+<p><a href="/">返回主页</a></p>
+<hr>
+
+    <table border="1">
+    <tr>
+        {% for each in head %}
+            <th>{{ each }}</th>
+        {% endfor %}
+    </tr>
+    {% for work_content in all_data %}
+        <tr>
+            {% for col,each in work_content %}
+{#                <td><input type="text" name="{{ col }}" value="{{ each }}" style="width: auto;height: 100%"></td>#}
+                <td><a>{{ each }}</a></td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+
+    </table>
+
+    <button type="submit" onclick="location.href='/output?id={{ id }}'">导出</button>
+
+
+
+</body>
+</html>
