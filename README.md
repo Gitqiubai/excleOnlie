@@ -10,5 +10,8 @@
 		
 ## Demo
 	### http://111.230.243.181:8000/
-	### 后台地址 http://111.230.243.181:8000/admin/     admin password
+	### 后台地址 http://111.230.243.181:8000/admin/     
+		账号密码 admin password
+	
+##示例
 	
